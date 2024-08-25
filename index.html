@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calcu.css">
+</head>
+<body>
+    <div class="container">
+     <div class="clacu">
+        <form>
+            <div class="display">
+                <input type="text" name="display" class="dis" id="result" readonly>
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="cntentClear()" id="ac" class="operator">
+                <input type="button" value="%" onclick="displayData('%')" class="operator">
+                <input type="button" value="DEL"onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                <input type="button" value="/" onclick="displayData( '/')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="displayData('7')">
+                <input type="button" value="8" onclick="displayData('8')">
+                <input type="button" value="9" onclick="displayData('9')">
+                <input type="button" value="*" onclick="displayData('*')">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="displayData('4')">
+                <input type="button" value="5" onclick="displayData('5')">
+                <input type="button" value="6" onclick="displayData('6')">
+                <input type="button" value="-" onclick="displayData('-')">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="displayData('1')">
+                <input type="button" value="2" onclick="displayData('2')">
+                <input type="button" value="3" onclick="displayData('3')">
+                <input type="button" value="+" onclick="displayData('+')">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="displayData('00')">
+                <input type="button" value="0" onclick="displayData('0')">
+                <input type="button" value="." onclick="displayData('.')">
+                <input type="button" value="="onclick="operationTo()" id="equal">
+            </div>
+        </form>
+     </div>
+    </div>
+</body>
+<!-- external  js -->
+<script src="calcu.js"></script>
+</html>
